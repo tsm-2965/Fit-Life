@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Workouts - FitLife</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.ico">
+
+  <!-- W3.CSS -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="css/w3-overrides.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Font -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+</head>
+
+<body id="top">
+
+<!-- ================= MAIN NAV ================= -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a href="index.html" class="w3-bar-item w3-button">HOME</a>
+    <a href="workouts.html" class="w3-bar-item w3-button w3-red">WORKOUTS</a>
+    <a href="training_plans.html" class="w3-bar-item w3-button">PLANS</a>
+    <a href="nutrition.html" class="w3-bar-item w3-button">NUTRITION</a>
+    <a href="team.html" class="w3-bar-item w3-button">TRAINERS</a>
+    <a href="contact.html" class="w3-bar-item w3-button">CONTACT</a>
+  </div>
+</div>
+
+<!-- ================= BREADCRUMBS ================= -->
+<div class="w3-container w3-light-grey w3-padding-32 w3-margin-top">
+  <div class="w3-bar w3-small">
+    <span class="w3-bar-item">You are here:</span>
+    <a href="index.html" class="w3-bar-item w3-button w3-white">Home</a>
+    <span class="w3-bar-item">/</span>
+    <span class="w3-bar-item">Workouts</span>
+  </div>
+</div>
+
+<!-- ================= HERO ================= -->
+<header class="workouts-hero w3-center">
+  <h1 class="w3-xxlarge">Workout Categories</h1>
+  <p>Explore training styles for every goal</p>
+  <a href="#categories" class="w3-button w3-black w3-margin-top">
+    View Categories ↓
+  </a>
+</header>
+
+<!-- ================= CATEGORY CARDS ================= -->
+<section class="w3-container w3-content w3-padding-64" id="categories">
+  <h2 class="w3-center">Choose a Workout</h2>
+  <p class="w3-center w3-opacity"><i>Click a workout to learn more</i></p>
+
+  <div class="w3-row-padding w3-padding-32">
+
+    <!-- Strength -->
+    <div class="w3-third">
+      <div class="w3-card w3-center w3-padding">
+        <img src="images/strength.webp" alt="Strength Training" class="w3-image">
+        <h3>Strength Training</h3>
+        <p>Build muscle and power</p>
+        <button onclick="document.getElementById('m1').style.display='block'"
+                class="w3-button w3-red">Learn More</button>
+      </div>
+    </div>
+
+    <!-- Cardio -->
+    <div class="w3-third">
+      <div class="w3-card w3-center w3-padding">
+        <img src="images/cardio.jpg" alt="Cardio Workout" class="w3-image">
+        <h3>Cardio</h3>
+        <p>Boost endurance and heart health</p>
+        <button onclick="document.getElementById('m2').style.display='block'"
+                class="w3-button w3-red">Learn More</button>
+      </div>
+    </div>
+
+    <!-- HIIT -->
+    <div class="w3-third">
+      <div class="w3-card w3-center w3-padding">
+        <img src="images/hittt.webp" alt="HIIT Workout" class="w3-image">
+        <h3>HIIT</h3>
+        <p>Burn fat with intense intervals</p>
+        <button onclick="document.getElementById('m3').style.display='block'"
+                class="w3-button w3-red">Learn More</button>
+      </div>
+    </div>
+
+  </div>
+
+  <a href="#details" class="w3-button w3-black">Workout Details ↓</a>
+</section>
+
+<!-- ================= ACCORDION ================= -->
+<section class="w3-container w3-light-grey w3-padding-64" id="details">
+  <h2 class="w3-center">Workout Breakdown</h2>
+
+  <button onclick="toggle('s1')" class="w3-button w3-block w3-black">
+    Strength Training
+  </button>
+  <div id="s1" class="w3-hide w3-container w3-white">
+    <p>Focuses on muscle growth, bone density, and overall strength.</p>
+    <ul>
+      <li>Weight lifting</li>
+      <li>Bodyweight exercises</li>
+      <li>Resistance bands</li>
+    </ul>
+  </div>
+
+  <button onclick="toggle('s2')" class="w3-button w3-block w3-black w3-margin-top">
+    Cardio
+  </button>
+  <div id="s2" class="w3-hide w3-container w3-white">
+    <p>Improves heart health and endurance.</p>
+    <ul>
+      <li>Running</li>
+      <li>Cycling</li>
+      <li>Jump rope</li>
+    </ul>
+  </div>
+
+  <button onclick="toggle('s3')" class="w3-button w3-block w3-black w3-margin-top">
+    HIIT
+  </button>
+  <div id="s3" class="w3-hide w3-container w3-white">
+    <p>Alternates intense work with short recovery.</p>
+    <ul>
+      <li>Burpees</li>
+      <li>Mountain climbers</li>
+      <li>Jump squats</li>
+    </ul>
+  </div>
+
+  <a href="#top" class="w3-button w3-margin-top">Back to Top ↑</a>
+</section>
+
+<!-- ================= FILTER DROPDOWN ================= -->
+<section class="w3-container w3-padding-64 w3-center">
+  <h2>Filter Workouts</h2>
+  <select class="w3-select w3-border">
+    <option value="">Choose Type</option>
+    <option>Strength</option>
+    <option>Cardio</option>
+    <option>HIIT</option>
+  </select>
+</section>
+
+<!-- ================= MODALS ================= -->
+<div id="m1" class="w3-modal">
+  <div class="w3-modal-content w3-padding">
+    <span onclick="document.getElementById('m1').style.display='none'"
+          class="w3-button w3-display-topright">&times;</span>
+    <h3>Strength Training</h3>
+    <p>Build muscle and increase power safely.</p>
+  </div>
+</div>
+
+<div id="m2" class="w3-modal">
+  <div class="w3-modal-content w3-padding">
+    <span onclick="document.getElementById('m2').style.display='none'"
+          class="w3-button w3-display-topright">&times;</span>
+    <h3>Cardio</h3>
+    <p>Improve stamina and cardiovascular health.</p>
+  </div>
+</div>
+
+<div id="m3" class="w3-modal">
+  <div class="w3-modal-content w3-padding">
+    <span onclick="document.getElementById('m3').style.display='none'"
+          class="w3-button w3-display-topright">&times;</span>
+    <h3>HIIT</h3>
+    <p>High calorie burn in minimal time.</p>
+  </div>
+</div>
+
+<!-- ================= FOOTER SITEMAP ================= -->
+<footer class="w3-container w3-black w3-padding-64">
+  <h3>Sitemap</h3>
+  <ul class="w3-ul">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="workouts.html">Workouts</a></li>
+    <li><a href="training_plans.html">Training Plans</a></li>
+    <li><a href="nutrition.html">Nutrition</a></li>
+    <li><a href="team.html">Trainers</a></li>
+    <li><a href="contact.html">Contact</a></li>
+
+    <!-- Concept Pages -->
+    <li><a href="#">Workout Generator (Concept)</a></li>
+    <li><a href="#">Live Classes (Concept)</a></li>
+    <li><a href="#">Progress Tracker (Concept)</a></li>
+  </ul>
+
+  <p class="w3-center">&copy; 2025 FitLife</p>
+</footer>
+
+<script>
+function toggle(id) {
+  var x = document.getElementById(id);
+  x.classList.toggle("w3-hide");
+}
+</script>
+
+</body>
+</html>

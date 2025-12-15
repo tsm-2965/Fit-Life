@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Contact FitLife</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.ico">
+
+  <!-- W3.CSS -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+
+  <!-- External CSS Files -->
+  <link rel="stylesheet" href="css/w3-overrides.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Fonts & Icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body id="top">
+
+<!-- ================= PRIMARY NAV ================= -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a href="index.html" class="w3-bar-item w3-button">HOME</a>
+    <a href="about.html" class="w3-bar-item w3-button">ABOUT</a>
+    <a href="workouts.html" class="w3-bar-item w3-button">WORKOUTS</a>
+    <a href="training_plans.html" class="w3-bar-item w3-button">PLANS</a>
+    <a href="nutrition.html" class="w3-bar-item w3-button">NUTRITION</a>
+    <a href="testimonials.html" class="w3-bar-item w3-button">TESTIMONIALS</a>
+    <a href="team.html" class="w3-bar-item w3-button">TEAM</a>
+    <a href="contact.html" class="w3-bar-item w3-button">CONTACT</a>
+  </div>
+</div>
+
+<!-- ================= BREADCRUMBS (NAV #2) ================= -->
+<div class="w3-container w3-padding-32 w3-light-grey w3-margin-top">
+  <div class="w3-bar w3-small">
+    <span class="w3-bar-item">You are here:</span>
+    <a href="index.html" class="w3-bar-item w3-button w3-white">Home</a>
+    <span class="w3-bar-item">/</span>
+    <span class="w3-bar-item">Contact</span>
+  </div>
+</div>
+
+<!-- ================= HERO ================= -->
+<header class="contact-hero w3-center">
+  <h1 class="w3-xxlarge">Contact FitLife</h1>
+  <p>We’re here to help you start strong</p>
+  <a href="#contact-info" class="w3-button w3-black w3-margin-top">Jump to Info ↓</a>
+</header>
+
+<!-- ================= CONTACT INFO ================= -->
+<section class="w3-container w3-content w3-padding-64" id="contact-info">
+  <h2 class="w3-center">Get in Touch</h2>
+
+  <div class="w3-row-padding w3-margin-top">
+    <div class="w3-half">
+      <p><i class="fa fa-map-marker w3-margin-right"></i>123 FitStreet, Fitness City, USA</p>
+      <p><i class="fa fa-phone w3-margin-right"></i>+1 555-123-4567</p>
+      <p><i class="fa fa-envelope w3-margin-right"></i>contact@fitlife.com</p>
+
+      <a href="#long-form" class="w3-button w3-red w3-margin-top">Jump to Form ↓</a>
+    </div>
+
+    <div class="w3-half">
+      <img src="images/contact.jpg" alt="FitLife Location" class="w3-image">
+    </div>
+  </div>
+
+  <a href="#top" class="w3-button w3-margin-top">Back to Top ↑</a>
+</section>
+
+<!-- ================= LONG FORM (REQUIRED) ================= -->
+<section class="w3-container w3-padding-64 w3-light-grey" id="long-form">
+  <h2 class="w3-center">Detailed Inquiry</h2>
+
+  <form class="w3-container w3-card w3-white w3-padding">
+    <fieldset class="w3-margin-bottom">
+      <legend><strong>Personal Information</strong></legend>
+
+      <label>Name</label>
+      <input class="w3-input w3-border" type="text" required>
+
+      <label>Email</label>
+      <input class="w3-input w3-border" type="email" required>
+    </fieldset>
+
+    <fieldset>
+      <legend><strong>Message Details</strong></legend>
+
+      <label>Subject</label>
+      <input class="w3-input w3-border" type="text">
+
+      <label>Message</label>
+      <textarea class="w3-input w3-border" rows="4"></textarea>
+    </fieldset>
+
+    <button class="w3-button w3-black w3-margin-top">Submit</button>
+  </form>
+
+  <a href="#top" class="w3-button w3-margin-top">Back to Top ↑</a>
+</section>
+
+<!-- ================= SHORT FORM (REQUIRED) ================= -->
+<section class="w3-container w3-padding-64 w3-center">
+  <h2>Quick Contact</h2>
+
+  <form class="w3-container w3-card w3-white w3-padding w3-content" style="max-width:500px">
+    <input class="w3-input w3-border" type="text" placeholder="Name" required>
+    <input class="w3-input w3-border w3-margin-top" type="email" placeholder="Email" required>
+
+    <select class="w3-select w3-border w3-margin-top">
+      <option>Choose Topic</option>
+      <option>Membership</option>
+      <option>Training</option>
+      <option>Nutrition</option>
+    </select>
+
+    <button class="w3-button w3-red w3-margin-top">Send</button>
+  </form>
+</section>
+
+<!-- ================= MODAL (REQUIRED) ================= -->
+<section class="w3-container w3-center w3-padding-64 w3-light-grey">
+  <button onclick="document.getElementById('hoursModal').style.display='block'"
+          class="w3-button w3-black">
+    View Business Hours
+  </button>
+</section>
+
+<div id="hoursModal" class="w3-modal">
+  <div class="w3-modal-content w3-padding">
+    <span onclick="document.getElementById('hoursModal').style.display='none'"
+          class="w3-button w3-display-topright">&times;</span>
+    <h3>Business Hours</h3>
+    <p>Monday–Friday: 6am–9pm<br>Saturday–Sunday: 8am–6pm</p>
+  </div>
+</div>
+
+<!-- ================= SEARCH / FILTER (REQUIRED) ================= -->
+<section class="w3-container w3-padding-64 w3-center">
+  <h2>Contact Reason</h2>
+  <select class="w3-select w3-border">
+    <option>Select a reason</option>
+    <option>Membership</option>
+    <option>Personal Training</option>
+    <option>Nutrition Coaching</option>
+  </select>
+</section>
+
+<!-- ================= FOOTER SITEMAP ================= -->
+<footer class="w3-container w3-black w3-padding-64">
+  <h3>Sitemap</h3>
+  <ul class="w3-ul">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="workouts.html">Workouts</a></li>
+    <li><a href="training_plans.html">Training Plans</a></li>
+    <li><a href="nutrition.html">Nutrition</a></li>
+    <li><a href="contact.html">Contact</a></li>
+
+    <!-- Concept Pages -->
+    <li><a href="#">Member Portal (Concept)</a></li>
+    <li><a href="#">Virtual Consultations (Concept)</a></li>
+    <li><a href="#">Corporate Wellness (Concept)</a></li>
+  </ul>
+
+  <p class="w3-center">&copy; 2025 FitLife</p>
+</footer>
+
+</body>
+</html>

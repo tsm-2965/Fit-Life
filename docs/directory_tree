@@ -1,0 +1,39 @@
+FitLife-Website
+│
+├── index.html
+├── workouts.html
+├── hiit.html
+├── faq.html
+├── training_plans.html
+│
+├── css
+│   ├── styles.css
+│   └── w3.css
+│
+├── js
+│   └── main.js
+│
+├── components
+│   ├── navbar.html
+│   ├── breadcrumb.html
+│   ├── hero.html
+│   ├── faq-item.html
+│   └── workout-card.html
+│
+├── forms
+│   └── personalized_plan_form.html
+│
+├── assets
+│   ├── images
+│   │   ├── hero
+│   │   ├── workouts
+│   │   ├── trainers
+│   │   └── icons
+│   ├── videos
+│   │   ├── intro.mp4
+│   │   └── workouts
+│   └── fonts
+│
+└── docs
+    ├── directory_tree.txt
+    └── directory_tree.pdf

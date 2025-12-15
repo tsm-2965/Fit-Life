@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>About FitLife</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.ico">
+
+  <!-- W3.CSS Framework -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+
+  <!-- External CSS Files -->
+  <link rel="stylesheet" href="css/w3-overrides.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Fonts & Icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body id="top">
+
+<!-- ================= PRIMARY NAV ================= -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a href="index.html" class="w3-bar-item w3-button">HOME</a>
+    <a href="about.html" class="w3-bar-item w3-button">ABOUT</a>
+    <a href="workouts.html" class="w3-bar-item w3-button">WORKOUTS</a>
+    <a href="training_plans.html" class="w3-bar-item w3-button">PLANS</a>
+    <a href="nutrition.html" class="w3-bar-item w3-button">NUTRITION</a>
+    <a href="testimonials.html" class="w3-bar-item w3-button">TESTIMONIALS</a>
+    <a href="team.html" class="w3-bar-item w3-button">TEAM</a>
+    <a href="contact.html" class="w3-bar-item w3-button">CONTACT</a>
+  </div>
+</div>
+
+<!-- ================= BREADCRUMBS (NAV SYSTEM #2) ================= -->
+<div class="w3-container w3-padding-32 w3-light-grey w3-margin-top">
+  <div class="w3-bar w3-small">
+    <span class="w3-bar-item">You are here:</span>
+    <a href="index.html" class="w3-bar-item w3-button w3-white">Home</a>
+    <span class="w3-bar-item">/</span>
+    <span class="w3-bar-item">About</span>
+  </div>
+</div>
+
+<!-- ================= HERO ================= -->
+<header class="about-hero w3-center">
+  <h1 class="w3-xxlarge">About FitLife</h1>
+  <p>Your fitness journey starts here</p>
+  <a href="#mission" class="w3-button w3-black w3-margin-top">Jump to Mission ↓</a>
+</header>
+
+<!-- ================= ABOUT CONTENT ================= -->
+<section class="w3-container w3-content w3-padding-64" id="mission">
+  <h2 class="w3-center">Our Mission</h2>
+
+  <img src="images/trainers.webp" alt="FitLife Trainers" class="w3-image w3-margin-bottom">
+
+  <p class="w3-justify">
+    FitLife is a modern fitness center dedicated to helping people achieve their health and wellness goals.
+    We combine professional training, cutting-edge equipment, and a supportive community to make fitness
+    accessible and enjoyable.
+  </p>
+
+  <p class="w3-justify">
+    Our programs focus on balanced development through strength training, cardiovascular conditioning,
+    flexibility, and recovery. Every plan is designed with safety, sustainability, and long-term success in mind.
+  </p>
+
+  <a href="#values" class="w3-button w3-red w3-margin-top">Jump to Values ↓</a>
+</section>
+
+<!-- ================= ACCORDION (REQUIRED COMPONENT) ================= -->
+<section class="w3-container w3-padding-64 w3-light-grey" id="values">
+  <h2 class="w3-center">Our Core Values</h2>
+
+  <button onclick="toggleAccordion('v1')" class="w3-button w3-block w3-black">
+    Community
+  </button>
+  <div id="v1" class="w3-hide w3-container w3-white">
+    <p>We foster an encouraging environment where everyone belongs.</p>
+  </div>
+
+  <button onclick="toggleAccordion('v2')" class="w3-button w3-block w3-black w3-margin-top">
+    Expertise
+  </button>
+  <div id="v2" class="w3-hide w3-container w3-white">
+    <p>Our certified trainers guide members safely and effectively.</p>
+  </div>
+
+  <a href="#top" class="w3-button w3-margin-top">Back to Top ↑</a>
+</section>
+
+<!-- ================= MODAL (REQUIRED COMPONENT) ================= -->
+<section class="w3-container w3-padding-64 w3-center">
+  <h2>Meet Our Team</h2>
+  <button onclick="document.getElementById('teamModal').style.display='block'"
+          class="w3-button w3-red">
+    View Trainer Philosophy
+  </button>
+</section>
+
+<div id="teamModal" class="w3-modal">
+  <div class="w3-modal-content w3-padding">
+    <span onclick="document.getElementById('teamModal').style.display='none'"
+          class="w3-button w3-display-topright">&times;</span>
+    <h3>Trainer Philosophy</h3>
+    <p>
+      Our trainers believe in personalized coaching, positive reinforcement,
+      and sustainable fitness habits.
+    </p>
+  </div>
+</div>
+
+<!-- ================= SEARCH / FILTER (REQUIRED) ================= -->
+<section class="w3-container w3-padding-64 w3-center w3-light-grey">
+  <h2>Explore FitLife</h2>
+  <select class="w3-select w3-border">
+    <option>Choose a topic</option>
+    <option>Our Trainers</option>
+    <option>Programs</option>
+    <option>Community Events</option>
+  </select>
+
+  <a href="#top" class="w3-button w3-black w3-margin-top">Back to Top ↑</a>
+</section>
+
+<!-- ================= FOOTER SITEMAP ================= -->
+<footer class="w3-container w3-black w3-padding-64">
+  <h3>Sitemap</h3>
+  <ul class="w3-ul">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="workouts.html">Workouts</a></li>
+    <li><a href="training_plans.html">Training Plans</a></li>
+    <li><a href="nutrition.html">Nutrition</a></li>
+    <li><a href="contact.html">Contact</a></li>
+
+    <!-- Concept Pages -->
+    <li><a href="#">Member App (Concept)</a></li>
+    <li><a href="#">Virtual Training (Concept)</a></li>
+    <li><a href="#">Wellness Retreats (Concept)</a></li>
+  </ul>
+
+  <p class="w3-center">&copy; 2025 FitLife</p>
+</footer>
+
+<script>
+function toggleAccordion(id) {
+  var x = document.getElementById(id);
+  x.classList.toggle("w3-hide");
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Training Plans - FitLife</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.ico">
+
+  <!-- W3.CSS -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="css/w3-overrides.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+</head>
+
+<body id="top">
+
+<!-- ================= MAIN NAV ================= -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a href="index.html" class="w3-bar-item w3-button">HOME</a>
+    <a href="workouts.html" class="w3-bar-item w3-button">WORKOUTS</a>
+    <a href="training_plans.html" class="w3-bar-item w3-button w3-red">PLANS</a>
+    <a href="nutrition.html" class="w3-bar-item w3-button">NUTRITION</a>
+    <a href="team.html" class="w3-bar-item w3-button">TRAINERS</a>
+    <a href="contact.html" class="w3-bar-item w3-button">CONTACT</a>
+  </div>
+</div>
+
+<!-- ================= BREADCRUMBS ================= -->
+<div class="w3-container w3-light-grey w3-padding-32 w3-margin-top">
+  <div class="w3-bar w3-small">
+    <span class="w3-bar-item">You are here:</span>
+    <a href="index.html" class="w3-bar-item w3-button w3-white">Home</a>
+    <span class="w3-bar-item">/</span>
+    <a href="workouts.html" class="w3-bar-item w3-button w3-white">Workouts</a>
+    <span class="w3-bar-item">/</span>
+    <span class="w3-bar-item">Training Plans</span>
+  </div>
+</div>
+
+<!-- ================= HERO ================= -->
+<header class="plans-hero w3-center">
+  <h1 class="w3-xxlarge">Training Plans</h1>
+  <p>Structured programs for every fitness level</p>
+  <a href="#plans" class="w3-button w3-black w3-margin-top">
+    View Plans ↓
+  </a>
+</header>
+
+<!-- ================= PLAN CARDS ================= -->
+<section class="w3-container w3-content w3-padding-64" id="plans">
+  <h2 class="w3-center">Choose Your Plan</h2>
+  <p class="w3-opacity w3-center">
+    <i>Programs built to help you succeed</i>
+  </p>
+
+  <div class="w3-row-padding w3-padding-32">
+
+    <div class="w3-third">
+      <div class="w3-card w3-padding w3-center">
+        <h3>Beginner Plan</h3>
+        <p>3 workouts/week. Full-body focus.</p>
+        <button onclick="document.getElementById('p1').style.display='block'"
+                class="w3-button w3-red">Details</button>
+      </div>
+    </div>
+
+    <div class="w3-third">
+      <div class="w3-card w3-padding w3-center">
+        <h3>Intermediate Plan</h3>
+        <p>5 workouts/week. Strength + cardio.</p>
+        <button onclick="document.getElementById('p2').style.display='block'"
+                class="w3-button w3-red">Details</button>
+      </div>
+    </div>
+
+    <div class="w3-third">
+      <div class="w3-card w3-padding w3-center">
+        <h3>Advanced Plan</h3>
+        <p>6–7 workouts/week. High intensity.</p>
+        <button onclick="document.getElementById('p3').style.display='block'"
+                class="w3-button w3-red">Details</button>
+      </div>
+    </div>
+
+  </div>
+
+  <a href="#why" class="w3-button w3-black">Why Our Plans Work ↓</a>
+</section>
+
+<!-- ================= ACCORDION ================= -->
+<section class="w3-container w3-light-grey w3-padding-64" id="why">
+  <h2 class="w3-center">Why Our Training Plans Work</h2>
+
+  <button onclick="toggle('a1')" class="w3-button w3-block w3-black">
+    Progressive Overload
+  </button>
+  <div id="a1" class="w3-hide w3-container w3-white">
+    <p>Gradually increases intensity to maximize results safely.</p>
+  </div>
+
+  <button onclick="toggle('a2')" class="w3-button w3-block w3-black w3-margin-top">
+    Balanced Programming
+  </button>
+  <div id="a2" class="w3-hide w3-container w3-white">
+    <p>Strength, cardio, mobility, and recovery are included.</p>
+  </div>
+
+  <a href="#top" class="w3-button w3-margin-top">Back to Top ↑</a>
+</section>
+
+<!-- ================= FILTER DROPDOWN ================= -->
+<section class="w3-container w3-padding-64 w3-center">
+  <h2>Filter Plans</h2>
+  <select class="w3-select w3-border">
+    <option value="">Choose Level</option>
+    <option>Beginner</option>
+    <option>Intermediate</option>
+    <option>Advanced</option>
+  </select>
+</section>
+
+<!-- ================= MODALS ================= -->
+<div id="p1" class="w3-modal">
+  <div class="w3-modal-content w3-padding">
+    <span onclick="document.getElementById('p1').style.display='none'"
+          class="w3-button w3-display-topright">&times;</span>
+    <h3>Beginner Plan</h3>
+    <p>Perfect for newcomers focusing on consistency and form.</p>
+  </div>
+</div>
+
+<div id="p2" class="w3-modal">
+  <div class="w3-modal-content w3-padding">
+    <span onclick="document.getElementById('p2').style.display='none'"
+          class="w3-button w3-display-topright">&times;</span>
+    <h3>Intermediate Plan</h3>
+    <p>For those ready to push strength and endurance further.</p>
+  </div>
+</div>
+
+<div id="p3" class="w3-modal">
+  <div class="w3-modal-content w3-padding">
+    <span onclick="document.getElementById('p3').style.display='none'"
+          class="w3-button w3-display-topright">&times;</span>
+    <h3>Advanced Plan</h3>
+    <p>Designed for experienced athletes and intense training.</p>
+  </div>
+</div>
+
+<!-- ================= FOOTER SITEMAP ================= -->
+<footer class="w3-container w3-black w3-padding-64">
+  <h3>Sitemap</h3>
+  <ul class="w3-ul">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="workouts.html">Workouts</a></li>
+    <li><a href="training_plans.html">Training Plans</a></li>
+    <li><a href="nutrition.html">Nutrition</a></li>
+    <li><a href="team.html">Trainers</a></li>
+    <li><a href="testimonials.html">Testimonials</a></li>
+    <li><a href="contact.html">Contact</a></li>
+
+    <!-- Concept Pages -->
+    <li><a href="#">Custom Coaching (Concept)</a></li>
+    <li><a href="#">Weekly Challenges (Concept)</a></li>
+    <li><a href="#">Progress Tracking (Concept)</a></li>
+  </ul>
+
+  <p class="w3-center">&copy; 2025 FitLife</p>
+</footer>
+
+<script>
+function toggle(id) {
+  var x = document.getElementById(id);
+  x.classList.toggle("w3-hide");
+}
+</script>
+
+</body>
+</html>

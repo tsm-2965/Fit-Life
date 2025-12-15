@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Testimonials - FitLife</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.ico">
+
+  <!-- W3.CSS -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="css/w3-overrides.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+</head>
+
+<body id="top">
+
+<!-- ================= PRIMARY NAV ================= -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a href="index.html" class="w3-bar-item w3-button">HOME</a>
+    <a href="about.html" class="w3-bar-item w3-button">ABOUT</a>
+    <a href="workouts.html" class="w3-bar-item w3-button">WORKOUTS</a>
+    <a href="training_plans.html" class="w3-bar-item w3-button">PLANS</a>
+    <a href="nutrition.html" class="w3-bar-item w3-button">NUTRITION</a>
+    <a href="testimonials.html" class="w3-bar-item w3-button">TESTIMONIALS</a>
+    <a href="team.html" class="w3-bar-item w3-button">TEAM</a>
+    <a href="contact.html" class="w3-bar-item w3-button">CONTACT</a>
+  </div>
+</div>
+
+<!-- ================= BREADCRUMBS ================= -->
+<div class="w3-container w3-padding-32 w3-light-grey w3-margin-top">
+  <div class="w3-bar w3-small">
+    <span class="w3-bar-item">You are here:</span>
+    <a href="index.html" class="w3-bar-item w3-button w3-white">Home</a>
+    <span class="w3-bar-item">/</span>
+    <span class="w3-bar-item">Testimonials</span>
+  </div>
+</div>
+
+<!-- ================= HERO ================= -->
+<header class="testimonials-hero w3-center">
+  <h1 class="w3-xxlarge">Our Happy Clients</h1>
+  <p>Real stories. Real results.</p>
+  <a href="#stories" class="w3-button w3-black w3-margin-top">Read Stories ↓</a>
+</header>
+
+<!-- ================= TESTIMONIAL CARDS ================= -->
+<section class="w3-container w3-content w3-padding-64" id="stories">
+  <h2 class="w3-center">Client Success Stories</h2>
+
+  <div class="w3-row-padding w3-padding-32">
+    <div class="w3-third">
+      <div class="w3-card w3-padding w3-center">
+        <h3>Jane Doe</h3>
+        <p>"FitLife transformed my fitness journey with incredible support."</p>
+        <button onclick="document.getElementById('m1').style.display='block'"
+                class="w3-button w3-red w3-small">Read More</button>
+      </div>
+    </div>
+
+    <div class="w3-third">
+      <div class="w3-card w3-padding w3-center">
+        <h3>John Smith</h3>
+        <p>"I lost 15 pounds in 3 months thanks to FitLife."</p>
+        <button onclick="document.getElementById('m2').style.display='block'"
+                class="w3-button w3-red w3-small">Read More</button>
+      </div>
+    </div>
+
+    <div class="w3-third">
+      <div class="w3-card w3-padding w3-center">
+        <h3>Emily Johnson</h3>
+        <p>"Professional, motivating, and results-driven."</p>
+        <button onclick="document.getElementById('m3').style.display='block'"
+                class="w3-button w3-red w3-small">Read More</button>
+      </div>
+    </div>
+  </div>
+
+  <a href="#feedback" class="w3-button w3-black">Why Clients Love Us ↓</a>
+</section>
+
+<!-- ================= ACCORDION ================= -->
+<section class="w3-container w3-light-grey w3-padding-64" id="feedback">
+  <h2 class="w3-center">Why Clients Love FitLife</h2>
+
+  <button onclick="toggleAccordion('a1')" class="w3-button w3-block w3-black">
+    Personalized Programs
+  </button>
+  <div id="a1" class="w3-hide w3-container w3-white">
+    <p>Custom workout and nutrition plans for every client.</p>
+  </div>
+
+  <button onclick="toggleAccordion('a2')" class="w3-button w3-block w3-black w3-margin-top">
+    Expert Trainers
+  </button>
+  <div id="a2" class="w3-hide w3-container w3-white">
+    <p>Certified professionals guiding every step.</p>
+  </div>
+
+  <a href="#top" class="w3-button w3-margin-top">Back to Top ↑</a>
+</section>
+
+<!-- ================= SEARCH / FILTER ================= -->
+<section class="w3-container w3-padding-64 w3-center">
+  <h2>Filter Testimonials</h2>
+  <select class="w3-select w3-border">
+    <option>Select focus area</option>
+    <option>Weight Loss</option>
+    <option>Strength</option>
+    <option>Endurance</option>
+  </select>
+</section>
+
+<!-- ================= MODALS ================= -->
+<div id="m1" class="w3-modal">
+  <div class="w3-modal-content w3-padding">
+    <span onclick="document.getElementById('m1').style.display='none'"
+          class="w3-button w3-display-topright">&times;</span>
+    <h3>Jane Doe</h3>
+    <p>Lost 20 pounds and gained confidence with FitLife’s programs.</p>
+  </div>
+</div>
+
+<div id="m2" class="w3-modal">
+  <div class="w3-modal-content w3-padding">
+    <span onclick="document.getElementById('m2').style.display='none'"
+          class="w3-button w3-display-topright">&times;</span>
+    <h3>John Smith</h3>
+    <p>Improved strength and endurance while losing weight.</p>
+  </div>
+</div>
+
+<div id="m3" class="w3-modal">
+  <div class="w3-modal-content w3-padding">
+    <span onclick="document.getElementById('m3').style.display='none'"
+          class="w3-button w3-display-topright">&times;</span>
+    <h3>Emily Johnson</h3>
+    <p>Achieved sustainable fitness habits and long-term results.</p>
+  </div>
+</div>
+
+<!-- ================= FOOTER SITEMAP ================= -->
+<footer class="w3-container w3-black w3-padding-64">
+  <h3>Sitemap</h3>
+  <ul class="w3-ul">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="workouts.html">Workouts</a></li>
+    <li><a href="training_plans.html">Training Plans</a></li>
+    <li><a href="nutrition.html">Nutrition</a></li>
+    <li><a href="team.html">Trainers</a></li>
+    <li><a href="testimonials.html">Testimonials</a></li>
+    <li><a href="contact.html">Contact</a></li>
+
+    <!-- Concept Pages -->
+    <li><a href="#">Transformation Gallery (Concept)</a></li>
+    <li><a href="#">Client Interviews (Concept)</a></li>
+    <li><a href="#">Success Metrics (Concept)</a></li>
+  </ul>
+
+  <p class="w3-center">&copy; 2025 FitLife</p>
+</footer>
+
+<script>
+function toggleAccordion(id) {
+  var x = document.getElementById(id);
+  x.classList.toggle("w3-hide");
+}
+</script>
+
+</body>
+</html>

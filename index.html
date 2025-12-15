@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Home - FitLife</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.ico">
+
+  <!-- CSS Framework -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+
+  <!-- External CSS Files -->
+  <link rel="stylesheet" href="css/w3-overrides.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Google Font -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+</head>
+
+<body id="top">
+
+<!-- ================= PRIMARY NAV ================= -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a href="index.html" class="w3-bar-item w3-button">HOME</a>
+    <a href="about.html" class="w3-bar-item w3-button">ABOUT</a>
+    <a href="workouts.html" class="w3-bar-item w3-button">WORKOUTS</a>
+    <a href="training_plans.html" class="w3-bar-item w3-button">PLANS</a>
+    <a href="nutrition.html" class="w3-bar-item w3-button">NUTRITION</a>
+    <a href="testimonials.html" class="w3-bar-item w3-button">TESTIMONIALS</a>
+    <a href="team.html" class="w3-bar-item w3-button">TEAM</a>
+    <a href="contact.html" class="w3-bar-item w3-button">CONTACT</a>
+  </div>
+</div>
+
+<!-- ================= BREADCRUMBS (NAV SYSTEM #2) ================= -->
+<div class="w3-container w3-padding-32 w3-light-grey w3-margin-top">
+  <div class="w3-bar w3-small">
+    <span class="w3-bar-item">You are here:</span>
+    <a href="index.html" class="w3-bar-item w3-button w3-white">Home</a>
+  </div>
+</div>
+
+<!-- ================= HERO ================= -->
+<header class="hero-section">
+  <div class="hero-content w3-center">
+    <h1 class="w3-jumbo">Welcome to FitLife</h1>
+    <p class="w3-large">Your journey to fitness starts here</p>
+    <a href="#programs" class="w3-button w3-red w3-round w3-large">Jump to Programs ↓</a>
+  </div>
+</header>
+
+<!-- ================= ABOUT ================= -->
+<section class="w3-container w3-padding-64 w3-center" id="programs">
+  <h2>WHAT WE OFFER</h2>
+
+  <div class="w3-row-padding w3-padding-32">
+    <div class="w3-third w3-card w3-padding">
+      <img src="images/strength.webp" alt="Strength Training" style="width:100%">
+      <h3>Strength</h3>
+      <p>Build muscle and confidence.</p>
+    </div>
+    <div class="w3-third w3-card w3-padding">
+      <img src="images/cardio.jpg" alt="Cardio Training" style="width:100%">
+      <h3>Cardio</h3>
+      <p>Improve endurance and heart health.</p>
+    </div>
+    <div class="w3-third w3-card w3-padding">
+      <img src="images/hittt.webp" alt="HIIT Training" style="width:100%">
+      <h3>HIIT</h3>
+      <p>High calorie burn in less time.</p>
+    </div>
+  </div>
+
+  <a href="#top" class="w3-button w3-black">Back to Top ↑</a>
+</section>
+
+<!-- ================= ACCORDION (REQUIRED COMPONENT) ================= -->
+<section class="w3-container w3-padding-64 w3-light-grey">
+  <h2 class="w3-center">Why Choose FitLife?</h2>
+
+  <button onclick="toggleAccordion('a1')" class="w3-button w3-block w3-black">Certified Trainers</button>
+  <div id="a1" class="w3-hide w3-container w3-white">
+    <p>All trainers are nationally certified.</p>
+  </div>
+
+  <button onclick="toggleAccordion('a2')" class="w3-button w3-block w3-black w3-margin-top">Flexible Programs</button>
+  <div id="a2" class="w3-hide w3-container w3-white">
+    <p>Plans designed for every lifestyle.</p>
+  </div>
+
+  <a href="#top" class="w3-button w3-margin-top">Back to Top ↑</a>
+</section>
+
+<!-- ================= SEARCH / FILTER (REQUIRED) ================= -->
+<section class="w3-container w3-padding-64 w3-center">
+  <h2>Find a Workout</h2>
+  <select class="w3-select w3-border">
+    <option>Choose a category</option>
+    <option>Cardio</option>
+    <option>HIIT</option>
+    <option>Strength</option>
+  </select>
+</section>
+
+<!-- ================= SHORT FORM ================= -->
+<section class="w3-container w3-padding-64 w3-light-grey">
+  <h2 class="w3-center">Quick Signup</h2>
+  <form class="w3-container w3-card w3-white w3-padding">
+    <label>Name</label>
+    <input class="w3-input w3-border" type="text" required>
+
+    <label>Email</label>
+    <input class="w3-input w3-border" type="email" required>
+
+    <label>Goal</label>
+    <select class="w3-select w3-border">
+      <option>Lose Weight</option>
+      <option>Build Muscle</option>
+    </select>
+
+    <button class="w3-button w3-black w3-margin-top">Submit</button>
+  </form>
+</section>
+
+<!-- ================= MODAL (REQUIRED) ================= -->
+<div id="promo" class="w3-modal">
+  <div class="w3-modal-content w3-padding">
+    <span onclick="document.getElementById('promo').style.display='none'"
+          class="w3-button w3-display-topright">&times;</span>
+    <h3>Free First Workout!</h3>
+    <p>Sign up today and get your first session free.</p>
+  </div>
+</div>
+
+<!-- ================= FOOTER SITEMAP ================= -->
+<footer class="w3-container w3-black w3-padding-64">
+  <h3>Sitemap</h3>
+  <ul class="w3-ul">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="workouts.html">Workouts</a></li>
+    <li><a href="training_plans.html">Training Plans</a></li>
+    <li><a href="nutrition.html">Nutrition</a></li>
+    <li><a href="testimonials.html">About Us</a></li>
+    <li><a href="team.html">Team</a></li>
+    <li><a href="contact.html">Contact</a></li>
+
+    <!-- Concept Pages -->
+    <li><a href="#">Mobile App (Concept)</a></li>
+    <li><a href="#">Corporate Wellness (Concept)</a></li>
+    <li><a href="#">Online Coaching (Concept)</a></li>
+  </ul>
+
+  <p class="w3-center">&copy; 2025 FitLife</p>
+</footer>
+
+<script>
+function toggleAccordion(id) {
+  var x = document.getElementById(id);
+  x.classList.toggle("w3-hide");
+}
+</script>
+
+</body>
+</html>

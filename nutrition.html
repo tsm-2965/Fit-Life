@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Nutrition - FitLife</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.ico">
+
+  <!-- W3.CSS Framework -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+
+  <!-- External CSS Files -->
+  <link rel="stylesheet" href="css/w3-overrides.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Font -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+</head>
+
+<body id="top">
+
+<!-- ================= PRIMARY NAV ================= -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a href="index.html" class="w3-bar-item w3-button">HOME</a>
+    <a href="about.html" class="w3-bar-item w3-button">ABOUT</a>
+    <a href="workouts.html" class="w3-bar-item w3-button">WORKOUTS</a>
+    <a href="training_plans.html" class="w3-bar-item w3-button">PLANS</a>
+    <a href="nutrition.html" class="w3-bar-item w3-button">NUTRITION</a>
+    <a href="testimonials.html" class="w3-bar-item w3-button">TESTIMONIALS</a>
+    <a href="team.html" class="w3-bar-item w3-button">TEAM</a>
+    <a href="contact.html" class="w3-bar-item w3-button">CONTACT</a>
+  </div>
+</div>
+
+<!-- ================= BREADCRUMBS (NAV #2) ================= -->
+<div class="w3-container w3-padding-32 w3-light-grey w3-margin-top">
+  <div class="w3-bar w3-small">
+    <span class="w3-bar-item">You are here:</span>
+    <a href="index.html" class="w3-bar-item w3-button w3-white">Home</a>
+    <span class="w3-bar-item">/</span>
+    <span class="w3-bar-item">Nutrition</span>
+  </div>
+</div>
+
+<!-- ================= HERO ================= -->
+<header class="nutrition-hero w3-center">
+  <h1 class="w3-jumbo">Nutrition for a Healthy Life</h1>
+  <p class="w3-large">Fuel your workouts and your body</p>
+  <a href="#why" class="w3-button w3-black w3-margin-top">Why Nutrition ↓</a>
+</header>
+
+<!-- ================= INTRO ================= -->
+<section class="w3-container w3-padding-64 w3-center" id="why">
+  <h2>Why Nutrition Matters</h2>
+  <p class="w3-opacity"><i>Balanced meals + fitness = results</i></p>
+
+  <img src="images/nutrition.webp" alt="Healthy Food" class="w3-image w3-margin-bottom">
+
+  <p>
+    Proper nutrition boosts energy, supports muscle recovery, and enhances overall
+    performance. At FitLife, we emphasize sustainable eating habits that complement
+    your training goals.
+  </p>
+
+  <a href="#plans" class="w3-button w3-red w3-margin-top">Meal Plans ↓</a>
+</section>
+
+<!-- ================= MEAL PLANS (CARDS) ================= -->
+<section class="w3-container w3-light-grey w3-padding-64 w3-center" id="plans">
+  <h2>Meal Plans</h2>
+
+  <div class="w3-row-padding w3-padding-32">
+    <div class="w3-third">
+      <div class="w3-card w3-white w3-padding">
+        <h3>Beginner Plan</h3>
+        <p>Simple meals for healthy habits.</p>
+      </div>
+    </div>
+    <div class="w3-third">
+      <div class="w3-card w3-white w3-padding">
+        <h3>Intermediate Plan</h3>
+        <p>Balanced nutrition to support workouts.</p>
+      </div>
+    </div>
+    <div class="w3-third">
+      <div class="w3-card w3-white w3-padding">
+        <h3>Advanced Plan</h3>
+        <p>High-performance fuel for intense training.</p>
+      </div>
+    </div>
+  </div>
+
+  <a href="#recipes" class="w3-button w3-black">Recipes ↓</a>
+</section>
+
+<!-- ================= RECIPES (CARDS) ================= -->
+<section class="w3-container w3-padding-64 w3-center" id="recipes">
+  <h2>Healthy Recipes</h2>
+
+  <div class="w3-row-padding w3-padding-32">
+    <div class="w3-third w3-card w3-padding">
+      <img src="images/Quinoa salad.jpg" alt="Quinoa Salad" class="w3-image">
+      <h3>Quinoa Salad</h3>
+      <p>Protein-packed and refreshing.</p>
+    </div>
+    <div class="w3-third w3-card w3-padding">
+      <img src="images/smoothie.webp" alt="Protein Smoothie" class="w3-image">
+      <h3>Protein Smoothie</h3>
+      <p>Perfect post-workout recovery.</p>
+    </div>
+    <div class="w3-third w3-card w3-padding">
+      <img src="images/grilledchick.webp" alt="Grilled Chicken" class="w3-image">
+      <h3>Grilled Chicken & Veggies</h3>
+      <p>Lean protein with essential nutrients.</p>
+    </div>
+  </div>
+
+  <a href="#tips" class="w3-button w3-red">Nutrition Tips ↓</a>
+</section>
+
+<!-- ================= ACCORDION (REQUIRED) ================= -->
+<section class="w3-container w3-padding-64 w3-light-grey" id="tips">
+  <h2 class="w3-center">Nutrition Tips</h2>
+
+  <button onclick="toggleAccordion('t1')" class="w3-button w3-block w3-black">
+    Stay Hydrated
+  </button>
+  <div id="t1" class="w3-hide w3-container w3-white">
+    <p>Drink water consistently throughout the day.</p>
+  </div>
+
+  <button onclick="toggleAccordion('t2')" class="w3-button w3-block w3-black w3-margin-top">
+    Eat Balanced Meals
+  </button>
+  <div id="t2" class="w3-hide w3-container w3-white">
+    <p>Include protein, carbs, and healthy fats.</p>
+  </div>
+
+  <a href="#top" class="w3-button w3-margin-top">Back to Top ↑</a>
+</section>
+
+<!-- ================= SEARCH / FILTER (REQUIRED) ================= -->
+<section class="w3-container w3-padding-64 w3-center">
+  <h2>Find Nutrition Content</h2>
+  <select class="w3-select w3-border">
+    <option>Select Category</option>
+    <option>Meal Plans</option>
+    <option>Recipes</option>
+    <option>Tips</option>
+  </select>
+</section>
+
+<!-- ================= MODAL (REQUIRED) ================= -->
+<section class="w3-container w3-center w3-padding-64 w3-light-grey">
+  <button onclick="document.getElementById('nutritionModal').style.display='block'"
+          class="w3-button w3-black">
+    Nutrition Disclaimer
+  </button>
+</section>
+
+<div id="nutritionModal" class="w3-modal">
+  <div class="w3-modal-content w3-padding">
+    <span onclick="document.getElementById('nutritionModal').style.display='none'"
+          class="w3-button w3-display-topright">&times;</span>
+    <h3>Important Notice</h3>
+    <p>
+      Nutrition guidance is for educational purposes only.
+      Consult a healthcare professional for medical advice.
+    </p>
+  </div>
+</div>
+
+<!-- ================= CALL TO ACTION ================= -->
+<section class="w3-container w3-padding-64 w3-center">
+  <h2>Ready to Eat Better?</h2>
+  <a href="contact.html" class="w3-button w3-red w3-large">
+    Get Personalized Nutrition Guidance
+  </a>
+</section>
+
+<!-- ================= FOOTER SITEMAP ================= -->
+<footer class="w3-container w3-black w3-padding-64">
+  <h3>Sitemap</h3>
+  <ul class="w3-ul">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="workouts.html">Workouts</a></li>
+    <li><a href="training_plans.html">Training Plans</a></li>
+    <li><a href="nutrition.html">Nutrition</a></li>
+    <li><a href="contact.html">Contact</a></li>
+
+    <!-- Concept Pages -->
+    <li><a href="#">Meal Planner Tool (Concept)</a></li>
+    <li><a href="#">Supplement Guide (Concept)</a></li>
+    <li><a href="#">Virtual Nutrition Coaching (Concept)</a></li>
+  </ul>
+
+  <p class="w3-center">&copy; 2025 FitLife</p>
+</footer>
+
+<script>
+function toggleAccordion(id) {
+  var x = document.getElementById(id);
+  x.classList.toggle("w3-hide");
+}
+</script>
+
+</body>
+</html>

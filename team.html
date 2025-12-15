@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Our Trainers - FitLife</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.ico">
+
+  <!-- W3.CSS -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+
+  <!-- External CSS Files -->
+  <link rel="stylesheet" href="css/w3-overrides.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Fonts & Icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body id="top">
+
+<!-- ================= PRIMARY NAV ================= -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a href="index.html" class="w3-bar-item w3-button">HOME</a>
+    <a href="about.html" class="w3-bar-item w3-button">ABOUT</a>
+    <a href="workouts.html" class="w3-bar-item w3-button">WORKOUTS</a>
+    <a href="training_plans.html" class="w3-bar-item w3-button">PLANS</a>
+    <a href="nutrition.html" class="w3-bar-item w3-button">NUTRITION</a>
+    <a href="testimonials.html" class="w3-bar-item w3-button">TESTIMONIALS</a>
+    <a href="team.html" class="w3-bar-item w3-button">TEAM</a>
+    <a href="contact.html" class="w3-bar-item w3-button">CONTACT</a>
+  </div>
+</div>
+
+<!-- ================= BREADCRUMBS (NAV #2) ================= -->
+<div class="w3-container w3-padding-32 w3-light-grey w3-margin-top">
+  <div class="w3-bar w3-small">
+    <span class="w3-bar-item">You are here:</span>
+    <a href="index.html" class="w3-bar-item w3-button w3-white">Home</a>
+    <span class="w3-bar-item">/</span>
+    <span class="w3-bar-item">Trainers</span>
+  </div>
+</div>
+
+<!-- ================= HERO ================= -->
+<header class="trainers-hero w3-center">
+  <h1 class="w3-xxlarge">Meet Our Trainers</h1>
+  <p>Professional guidance for every fitness level</p>
+  <a href="#trainers" class="w3-button w3-black w3-margin-top">Meet the Team ↓</a>
+</header>
+
+<!-- ================= TRAINERS (CARDS) ================= -->
+<section class="w3-container w3-content w3-padding-64" id="trainers">
+  <h2 class="w3-center">Certified Professionals</h2>
+
+  <div class="w3-row-padding w3-padding-32">
+    <div class="w3-third">
+      <div class="w3-card w3-padding w3-center">
+        <img src="images/trainer1.jpg" alt="Alex Johnson" class="w3-image w3-round">
+        <h3>Alex Johnson</h3>
+        <p>Strength & Conditioning</p>
+        <button onclick="document.getElementById('t1').style.display='block'"
+                class="w3-button w3-red w3-small">View Bio</button>
+      </div>
+    </div>
+
+    <div class="w3-third">
+      <div class="w3-card w3-padding w3-center">
+        <img src="images/trainer2.avif" alt="Samantha Lee" class="w3-image w3-round">
+        <h3>Samantha Lee</h3>
+        <p>HIIT & Cardio</p>
+        <button onclick="document.getElementById('t2').style.display='block'"
+                class="w3-button w3-red w3-small">View Bio</button>
+      </div>
+    </div>
+
+    <div class="w3-third">
+      <div class="w3-card w3-padding w3-center">
+        <img src="images/trainer3.png" alt="Michael Smith" class="w3-image w3-round">
+        <h3>Michael Smith</h3>
+        <p>Personal Training</p>
+        <button onclick="document.getElementById('t3').style.display='block'"
+                class="w3-button w3-red w3-small">View Bio</button>
+      </div>
+    </div>
+  </div>
+
+  <a href="#specialties" class="w3-button w3-black">Trainer Specialties ↓</a>
+</section>
+
+<!-- ================= ACCORDION (REQUIRED) ================= -->
+<section class="w3-container w3-light-grey w3-padding-64" id="specialties">
+  <h2 class="w3-center">Trainer Specialties</h2>
+
+  <button onclick="toggleAccordion('s1')" class="w3-button w3-block w3-black">
+    Strength & Conditioning
+  </button>
+  <div id="s1" class="w3-hide w3-container w3-white">
+    <p>Build muscle, power, and endurance safely.</p>
+  </div>
+
+  <button onclick="toggleAccordion('s2')" class="w3-button w3-block w3-black w3-margin-top">
+    HIIT & Cardio
+  </button>
+  <div id="s2" class="w3-hide w3-container w3-white">
+    <p>High-energy workouts to maximize calorie burn.</p>
+  </div>
+
+  <a href="#top" class="w3-button w3-margin-top">Back to Top ↑</a>
+</section>
+
+<!-- ================= SEARCH / FILTER (REQUIRED) ================= -->
+<section class="w3-container w3-padding-64 w3-center">
+  <h2>Find a Trainer</h2>
+  <select class="w3-select w3-border">
+    <option>Select specialty</option>
+    <option>Strength</option>
+    <option>HIIT</option>
+    <option>Personal Training</option>
+  </select>
+</section>
+
+<!-- ================= MODALS (REQUIRED) ================= -->
+<div id="t1" class="w3-modal">
+  <div class="w3-modal-content w3-padding">
+    <span onclick="document.getElementById('t1').style.display='none'"
+          class="w3-button w3-display-topright">&times;</span>
+    <h3>Alex Johnson</h3>
+    <p>Certified strength coach with 10+ years of experience.</p>
+  </div>
+</div>
+
+<div id="t2" class="w3-modal">
+  <div class="w3-modal-content w3-padding">
+    <span onclick="document.getElementById('t2').style.display='none'"
+          class="w3-button w3-display-topright">&times;</span>
+    <h3>Samantha Lee</h3>
+    <p>Cardio and HIIT specialist focused on endurance.</p>
+  </div>
+</div>
+
+<div id="t3" class="w3-modal">
+  <div class="w3-modal-content w3-padding">
+    <span onclick="document.getElementById('t3').style.display='none'"
+          class="w3-button w3-display-topright">&times;</span>
+    <h3>Michael Smith</h3>
+    <p>Personal trainer dedicated to sustainable fitness habits.</p>
+  </div>
+</div>
+
+<!-- ================= FOOTER SITEMAP ================= -->
+<footer class="w3-container w3-black w3-padding-64">
+  <h3>Sitemap</h3>
+  <ul class="w3-ul">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="workouts.html">Workouts</a></li>
+    <li><a href="training_plans.html">Training Plans</a></li>
+    <li><a href="nutrition.html">Nutrition</a></li>
+    <li><a href="team.html">Trainers</a></li>
+    <li><a href="contact.html">Contact</a></li>
+
+    <!-- Concept Pages -->
+    <li><a href="#">Trainer Certification Program (Concept)</a></li>
+    <li><a href="#">Virtual Coaching (Concept)</a></li>
+    <li><a href="#">Community Events (Concept)</a></li>
+  </ul>
+
+  <p class="w3-center">&copy; 2025 FitLife</p>
+</footer>
+
+<script>
+function toggleAccordion(id) {
+  var x = document.getElementById(id);
+  x.classList.toggle("w3-hide");
+}
+</script>
+
+</body>
+</html>
